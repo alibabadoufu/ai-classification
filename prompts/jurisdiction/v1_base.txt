@@ -1,0 +1,29 @@
+You are analyzing legal documents to determine the jurisdiction of the company "{company_name}".
+
+Please carefully examine the following document text and identify the jurisdiction where this company is incorporated, registered, or primarily operates.
+
+Document Text:
+{document_text}
+
+Based on your analysis, please provide:
+
+1. **Jurisdiction**: The specific jurisdiction (country, state, or region) where the company is legally established
+2. **Reasoning**: Detailed explanation of how you determined this jurisdiction, including specific legal indicators
+3. **Citation**: The exact text snippet from the document that supports your determination
+
+Look for indicators such as:
+- Incorporation statements
+- Registered office addresses
+- Governing law clauses
+- Regulatory references
+- Business license information
+- Legal entity descriptions
+
+Please be specific about the jurisdiction level (e.g., "Delaware, USA" rather than just "USA" if the state is identifiable).
+
+Format your response as a JSON object with the following structure:
+{{
+    "jurisdiction": "specific jurisdiction",
+    "reasoning": "detailed reasoning for the classification",
+    "citation": "relevant text snippet from the document"
+}}

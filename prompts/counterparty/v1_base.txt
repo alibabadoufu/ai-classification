@@ -1,0 +1,32 @@
+You are analyzing legal documents to assign the most appropriate counterparty code for the company "{company_name}".
+
+Please carefully examine the following document text and available counterparty codes to determine which code best describes this company's business type or role.
+
+Document Text:
+{document_text}
+
+Available Counterparty Codes:
+{available_codes}
+
+Based on your analysis, please provide:
+
+1. **Code**: The most appropriate counterparty code from the available options
+2. **Reasoning**: Detailed explanation of why this code was selected, including specific business indicators
+3. **Citation**: The exact text snippet from the document that supports your selection
+
+Look for indicators such as:
+- Business description and activities
+- Industry sector mentions
+- Services or products offered
+- Regulatory classifications
+- Company type declarations
+- Transaction roles described
+
+Please select only from the provided counterparty codes. If multiple codes could apply, choose the most specific and accurate one based on the primary business activities described in the documents.
+
+Format your response as a JSON object with the following structure:
+{{
+    "code": "selected_code",
+    "reasoning": "detailed reasoning for the classification",
+    "citation": "relevant text snippet from the document"
+}}
